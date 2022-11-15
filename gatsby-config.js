@@ -8,8 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix:'/andy-walking',
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Andy Walking`,
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,

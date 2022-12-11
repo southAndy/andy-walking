@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Nov 2022 16:11:04 GMT</lastBuildDate><item><title><![CDATA[Webpack 核心概念]]></title><description><![CDATA[####### tags:  每個  都會有以下的架構： 這些就是 webpack 中的 core-concept ，理解它們才能理解 webpack 究竟幫忙做了哪些事，那我們開始吧： Entry 引入自官方文件 An entry point indicates which…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/webpack/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/webpack/</guid><pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Dec 2022 07:46:47 GMT</lastBuildDate><item><title><![CDATA[學習筆記-我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;關於 React-Router&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[用firebase-auth來建立簡易的會員功能吧！（上）]]></title><description><![CDATA[####### tags:  會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是： 收藏、紀錄網站內容 根據會員喜好提供的客製化推薦 在這次的文章就是要透過 React + firebase 製作一個最簡易的會員功能。 產生一個 firebase…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</guid><pubDate>Fri, 09 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;firebase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;收藏、紀錄網站內容&lt;/li&gt;
+&lt;li&gt;根據會員喜好提供的客製化推薦&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在這次的文章就是要透過 React + firebase 製作一個最簡易的會員功能。&lt;/p&gt;
+&lt;h2&gt;產生一個 firebase 專案&lt;/h2&gt;
+&lt;p&gt;在開始使用 firebase 服務前，你需要先執行以下幾個步驟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;使用 google 帳號進行註冊&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根據自身的開發環境（如筆者是寫網頁)，因此會選擇 &lt;em&gt;web&lt;/em&gt; 來產生專案 (如下圖)
+&lt;img src=&quot;https://i.imgur.com/O9yZLiH.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h5&gt;(圖片來源：firebase 官網)&lt;/h5&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;進入專案後，會看到 firebase 內提供了多種的服務，如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Authentication: 驗證、管理使用者&lt;/li&gt;
+&lt;li&gt;Storage: 儲存資料的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;產生一個 react 專案&lt;/h2&gt;
+&lt;p&gt;在上面，我們已經完成了基本的 firebase 專案產生，接著要創建一個專案才能將 firebase 的服務引入專案內。&lt;/p&gt;
+&lt;p&gt;在這邊我們就根據 &lt;em&gt;React-Router&lt;/em&gt;教學的產生方式，來產生一個全新的 react 專案。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; create vite@latest &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;name-of-your-project&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; -- &lt;span class=&quot;token parameter variable&quot;&gt;--template&lt;/span&gt; react&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;接著執行&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;現在你應該就會看到一個全新的 react 初始畫面（如下圖）
+&lt;img src=&quot;https://i.imgur.com/XsSOvKY.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;恭喜你已經創立了一個全新的專案，那我們繼續前進吧～&lt;/p&gt;
+&lt;h3&gt;創立 react-router&lt;/h3&gt;
+&lt;p&gt;下方為筆者所做最基本的會員登錄架構&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- /(home)
+    - /login
+    - /register&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;目標：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;完成註冊後，會跳轉回登錄頁面 (&lt;code class=&quot;language-text&quot;&gt;/login&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;成功登錄後，會跳轉回首頁 (&lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那要怎麼達到呢？&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;如果想更深入認識 React-Router ，可以看我的筆記：&lt;a href=&quot;&amp;#x27;/content/blog/React-router/index.md&amp;#x27;&quot;&gt;我所不知道的 React-Router&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;引入 firebase-auth 功能&lt;/h3&gt;
+&lt;p&gt;這次要使用的是 Authentication 這項服務
+&lt;img src=&quot;https://i.imgur.com/5zEWuXV.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h5&gt;(圖片來源：firebase 官網)&lt;/h5&gt;</content:encoded></item><item><title><![CDATA[(筆記) 深拷貝和淺拷貝]]></title><description><![CDATA[####### tags…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</guid><pubDate>Sat, 03 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;Javascript&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;前言&lt;/h3&gt;
+&lt;p&gt;可以先把這個名詞分成兩個部分來理解，分別是:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;拷貝(行為)&lt;/li&gt;
+&lt;li&gt;深、淺(狀態)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;怎麼做到拷貝？&lt;/h3&gt;
+&lt;p&gt;當你用&lt;code class=&quot;language-text&quot;&gt;let&lt;/code&gt;,&lt;code class=&quot;language-text&quot;&gt;const&lt;/code&gt;等方式宣告了一個變數，並且賦予變數一個值的時候，同時會在背後默默建立一個記憶體位置。&lt;/p&gt;
+&lt;div&gt;
+    &lt;img src=&quot;https://i.imgur.com/eZ1aZXC.png&quot; style=&quot;width:100%&quot;&gt;
+    &lt;!-- ![](https://i.imgur.com/eZ1aZXC.png) --&gt;
+&lt;/div&gt;
+&lt;p&gt;接著當你希望其他變數&lt;/p&gt;
+&lt;h3&gt;淺拷貝有哪些方式？&lt;/h3&gt;
+&lt;h3&gt;深拷貝有哪些方式？&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3&gt;參考資料&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Webpack 核心概念]]></title><description><![CDATA[####### tags:  每個  都會有以下的架構： 這些就是 webpack 中的 core-concept ，理解它們才能理解 webpack 究竟幫忙做了哪些事，那我們開始吧： Entry 引入自官方文件 An entry point indicates which…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/webpack/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/webpack/</guid><pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;每個 &lt;code class=&quot;language-text&quot;&gt;webpack.config.js&lt;/code&gt; 都會有以下的架構：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;export &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token literal-property property&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -111,96 +184,4 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;export &lt;s
 &lt;h3&gt;參考資料:&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/the-messiah-code-%E7%A5%9E%E7%A2%BC%E6%8A%80%E8%A1%93%E5%85%B1%E7%AD%86/%E6%B7%BA%E8%AB%87-bundle-webpack%E8%88%87vue-cli-c2eda4a3cda3&quot;&gt;淺談 Bundle、與 Vue-CLI&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This however showed weasel&lt;/li&gt;
-&lt;li&gt;Well uncritical so misled
-&lt;ul&gt;
-&lt;li&gt;this is very interesting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
-view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
-&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;So baboon this&lt;/li&gt;
-&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
-&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
-&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
-impassive fruitlessly shut&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word &quot;and&quot; and the Little Blind Text should turn around and
-return to its own, safe country.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
-&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.&lt;/p&gt;
-&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
-&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word &quot;and&quot; and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/ol&gt;</content:encoded></item></channel></rss>

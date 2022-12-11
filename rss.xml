@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Dec 2022 08:38:39 GMT</lastBuildDate><item><title><![CDATA[(筆記)我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Dec 2022 09:29:04 GMT</lastBuildDate><item><title><![CDATA[(筆記)我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;關於 React-Router&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[用firebase-auth來建立簡易的會員功能吧！（上）]]></title><description><![CDATA[會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是： 收藏、紀錄網站內容 根據會員喜好提供的客製化推薦 在這次的文章就是要透過 React + firebase 製作一個最簡易的會員功能。 產生一個 firebase 專案 在開始使用 firebase…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</guid><pubDate>Fri, 09 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;收藏、紀錄網站內容&lt;/li&gt;
@@ -80,11 +80,39 @@ ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;如果想更深入認識 React-Router ，可以看我的筆記：&lt;a href=&quot;&amp;#x27;https://southandy.github.io/andy-walking/React-router/&amp;#x27;&quot;&gt;我所不知道的 React-Router&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;將 firebase 服務引入專案&lt;/h2&gt;
-&lt;p&gt;這次要使用的是 Authentication 這項服務
-&lt;img src=&quot;https://i.imgur.com/5zEWuXV.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;這次要使用的是 Authentication 這項服務&lt;/p&gt;
+&lt;img src=&quot;https://i.imgur.com/5zEWuXV.png&quot; style=&quot;width:100%;object-fit:cotain&quot;&gt;
 &lt;h5&gt;(圖片來源：firebase 官網)&lt;/h5&gt;
+&lt;h3&gt;建立 firebase 配置&lt;/h3&gt;
+&lt;p&gt;firebase 如何識別當前使用服務的會員身份，就是透過這個配置的設定。&lt;/p&gt;
+&lt;img src=&quot;https://i.imgur.com/aiSbKpt.png&quot; style=&quot;width:100%&quot;&gt;
+&lt;p&gt;筆者的做法是在專案內新增一個&lt;code class=&quot;language-text&quot;&gt;firebase.config.js&lt;/code&gt;的檔案：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 你要的服務 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;firebase/服務名稱&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; firebaseConfig &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;///.....&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//產生初始化的firebase app&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;initalizeApp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;firebaseConfig&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; 服務實例 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;你要的服務&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;app&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; 服務的實例&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;再將它引入需要用到的元件內，你就能開始使用了！&lt;/p&gt;
+&lt;h3&gt;小結&lt;/h3&gt;
+&lt;p&gt;在本篇文章，希望你至少知道：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;如何產生 firebase 專案&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;如何產生一個 react 專案&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;如何引入 firebase 服務&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在下一篇，我們要來透過 firebase-auth 的服務來完成簡單的會員註冊及登錄功能。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;參考資料：&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[(筆記) 深拷貝和淺拷貝]]></title><description><![CDATA[####### tags…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</guid><pubDate>Sat, 03 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;Javascript&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;參考資料：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://firebase.google.com/docs?authuser=1&amp;#x26;hl=zh&quot;&gt;firebase-doc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://reactrouter.com/en/main&quot;&gt;react-router-doc&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[(筆記) 深拷貝和淺拷貝]]></title><description><![CDATA[####### tags…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</guid><pubDate>Sat, 03 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;Javascript&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;前言&lt;/h3&gt;
 &lt;p&gt;可以先把這個名詞分成兩個部分來理解，分別是:&lt;/p&gt;
 &lt;ol&gt;

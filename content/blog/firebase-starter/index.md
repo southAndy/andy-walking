@@ -2,7 +2,7 @@
 title: 用firebase-auth來建立簡易的會員功能吧！（上）
 date: "2022-12-09"
 description: "會員服務是網站常見的功能，透過會員服務能提供給使用者更加客製化的體驗..."
-tags:['firebase','react']
+tags: ["firebase", "react"]
 ---
 
 會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是：
@@ -112,10 +112,48 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 ## 將 firebase 服務引入專案
 
 這次要使用的是 Authentication 這項服務
-![](https://i.imgur.com/5zEWuXV.png)
+
+<img src="https://i.imgur.com/5zEWuXV.png" style="width:100%;object-fit:cotain"/>
 
 ##### (圖片來源：firebase 官網)
+
+### 建立 firebase 配置
+
+firebase 如何識別當前使用服務的會員身份，就是透過這個配置的設定。
+
+<img src="https://i.imgur.com/aiSbKpt.png" style="width:100%"/>
+
+筆者的做法是在專案內新增一個`firebase.config.js`的檔案：
+
+```js
+import { 你要的服務 } from "firebase/服務名稱"
+
+const firebaseConfig = {
+  ///.....
+}
+
+//產生初始化的firebase app
+const app = initalizeApp(firebaseConfig)
+const 服務實例 = 你要的服務(app)
+
+export default 服務的實例
+```
+
+再將它引入需要用到的元件內，你就能開始使用了！
+
+### 小結
+
+在本篇文章，希望你至少知道：
+
+1. **如何產生 firebase 專案**
+2. **如何產生一個 react 專案**
+3. **如何引入 firebase 服務**
+
+在下一篇，我們要來透過 firebase-auth 的服務來完成簡單的會員註冊及登錄功能。
 
 ---
 
 ### 參考資料：
+
+1. [firebase-doc](https://firebase.google.com/docs?authuser=1&hl=zh)
+2. [react-router-doc](https://reactrouter.com/en/main)

@@ -19,7 +19,8 @@ description: "會員服務是網站常見的功能，透過會員服務能提供
 
 1. 使用 google 帳號進行註冊
 2. 根據自身的開發環境（如筆者是寫網頁)，因此會選擇 _web_ 來產生專案 (如下圖)
-   ![](https://i.imgur.com/O9yZLiH.png)
+   <img src="https://i.imgur.com/O9yZLiH.png" style="width:100%"/>
+   <!-- ![](https://i.imgur.com/O9yZLiH.png) -->
 
    ##### (圖片來源：firebase 官網)
 
@@ -31,7 +32,7 @@ description: "會員服務是網站常見的功能，透過會員服務能提供
 
 ## 產生一個 react 專案
 
-在上面，我們已經完成了基本的 firebase 專案產生，接著要創建一個專案才能將 firebase 的服務引入專案內。
+在上面，我們已經產生了基本的 _firebase_ 專案，接著要創建 _react_ 專案才能將 _firebase_ 的服務引入專案內。
 
 在這邊我們就根據 *React-Router*教學的產生方式，來產生一個全新的 react 專案。
 
@@ -46,13 +47,15 @@ npm run dev
 ```
 
 現在你應該就會看到一個全新的 react 初始畫面（如下圖）
-![](https://i.imgur.com/XsSOvKY.png)
+<img src="https://i.imgur.com/XsSOvKY.png" style="width:100%"/>
+
+<!-- ![](https://i.imgur.com/XsSOvKY.png) -->
 
 恭喜你已經創立了一個全新的專案，那我們繼續前進吧～
 
 ### 創立 react-router
 
-下方為筆者所做最基本的會員登錄架構
+筆者使用的是 v16.14 版本的設定，下方為筆者所設計最基本的會員登錄架構
 
 ```
 - /(home)
@@ -62,20 +65,58 @@ npm run dev
 
 目標：
 
-1. 完成註冊後，會跳轉回登錄頁面 (`/login`)
+1. 成功註冊後，會跳轉回登錄頁面 (`/login`)
 2. 成功登錄後，會跳轉回首頁 (`/`)
 
-那要怎麼達到呢？
+要怎麼產生不同的 router 呢？在這邊我們會需要用到下面幾個從`react-router-dom` 取出的方法
+
+1. `createBrowserRouter`: *Router*的設定，意外的跟*Vue*很類似，如下：
 
 ```js
-
+const routers = createBrowserRouter([
+  {
+    path: "/login",
+    element: <HomePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+    errorElement: <ErrorPage />,
+  },
+])
 ```
 
-如果想更深入認識 React-Router ，可以看我的筆記：[我所不知道的 React-Router]('/content/blog/React-router/index.md')
+接著，筆者的理解為 **react 在最初會先將虛擬的 DOM 掛在到實際網頁上的某個節點上**，同理，控制不同 router 產生內容的元件`<RouterProvider/>`，也同樣需放入初始的*root-dom*內。
 
-### 引入 firebase-auth 功能
+```js
+//main.js
+import { createBrowserRouter, Route, RouterProvider } from "react-router-dom"
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={routers} />
+    {/* <App /> */}
+  </React.StrictMode>
+)
+```
+
+如果想更深入認識 React-Router ，可以看我的筆記：[我所不知道的 React-Router]('https://southandy.github.io/andy-walking/React-router/')
+
+---
+
+## 將 firebase 服務引入專案
 
 這次要使用的是 Authentication 這項服務
 ![](https://i.imgur.com/5zEWuXV.png)
 
 ##### (圖片來源：firebase 官網)
+
+---
+
+### 參考資料：

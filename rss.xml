@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Dec 2022 07:46:47 GMT</lastBuildDate><item><title><![CDATA[學習筆記-我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Dec 2022 08:22:40 GMT</lastBuildDate><item><title><![CDATA[(筆記)我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;關於 React-Router&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[用firebase-auth來建立簡易的會員功能吧！（上）]]></title><description><![CDATA[####### tags:  會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是： 收藏、紀錄網站內容 根據會員喜好提供的客製化推薦 在這次的文章就是要透過 React + firebase 製作一個最簡易的會員功能。 產生一個 firebase…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</guid><pubDate>Fri, 09 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;firebase&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是：&lt;/p&gt;
 &lt;ol&gt;
@@ -14,7 +14,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;根據自身的開發環境（如筆者是寫網頁)，因此會選擇 &lt;em&gt;web&lt;/em&gt; 來產生專案 (如下圖)
-&lt;img src=&quot;https://i.imgur.com/O9yZLiH.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;img src=&quot;https://i.imgur.com/O9yZLiH.png&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;!-- ![](https://i.imgur.com/O9yZLiH.png) --&gt;
 &lt;h5&gt;(圖片來源：firebase 官網)&lt;/h5&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -27,31 +28,64 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2&gt;產生一個 react 專案&lt;/h2&gt;
-&lt;p&gt;在上面，我們已經完成了基本的 firebase 專案產生，接著要創建一個專案才能將 firebase 的服務引入專案內。&lt;/p&gt;
+&lt;p&gt;在上面，我們已經產生了基本的 &lt;em&gt;firebase&lt;/em&gt; 專案，接著要創建 &lt;em&gt;react&lt;/em&gt; 專案才能將 &lt;em&gt;firebase&lt;/em&gt; 的服務引入專案內。&lt;/p&gt;
 &lt;p&gt;在這邊我們就根據 &lt;em&gt;React-Router&lt;/em&gt;教學的產生方式，來產生一個全新的 react 專案。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; create vite@latest &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;name-of-your-project&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; -- &lt;span class=&quot;token parameter variable&quot;&gt;--template&lt;/span&gt; react&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;接著執行&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;現在你應該就會看到一個全新的 react 初始畫面（如下圖）
-&lt;img src=&quot;https://i.imgur.com/XsSOvKY.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;img src=&quot;https://i.imgur.com/XsSOvKY.png&quot; style=&quot;width:100%&quot;&gt;&lt;/p&gt;
+&lt;!-- ![](https://i.imgur.com/XsSOvKY.png) --&gt;
 &lt;p&gt;恭喜你已經創立了一個全新的專案，那我們繼續前進吧～&lt;/p&gt;
 &lt;h3&gt;創立 react-router&lt;/h3&gt;
-&lt;p&gt;下方為筆者所做最基本的會員登錄架構&lt;/p&gt;
+&lt;p&gt;筆者使用的是 v16.14 版本的設定，下方為筆者所設計最基本的會員登錄架構&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- /(home)
     - /login
     - /register&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;目標：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;完成註冊後，會跳轉回登錄頁面 (&lt;code class=&quot;language-text&quot;&gt;/login&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;成功註冊後，會跳轉回登錄頁面 (&lt;code class=&quot;language-text&quot;&gt;/login&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;成功登錄後，會跳轉回首頁 (&lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt;)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;那要怎麼達到呢？&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;如果想更深入認識 React-Router ，可以看我的筆記：&lt;a href=&quot;&amp;#x27;/content/blog/React-router/index.md&amp;#x27;&quot;&gt;我所不知道的 React-Router&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;引入 firebase-auth 功能&lt;/h3&gt;
+&lt;p&gt;要怎麼產生不同的 router 呢？在這邊我們會需要用到下面幾個從&lt;code class=&quot;language-text&quot;&gt;react-router-dom&lt;/code&gt; 取出的方法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;createBrowserRouter&lt;/code&gt;: &lt;em&gt;Router&lt;/em&gt;的設定，意外的跟&lt;em&gt;Vue&lt;/em&gt;很類似，如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; routers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;createBrowserRouter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/login&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;HomePage &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;errorElement&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;ErrorPage &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/register&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;RegisterPage &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;errorElement&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;ErrorPage &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/login&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;LoginPage &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;errorElement&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;ErrorPage &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;接著，筆者的理解為 &lt;strong&gt;react 在最初會先將虛擬的 DOM 掛在到實際網頁上的某個節點上&lt;/strong&gt;，同理，控制不同 router 產生內容的元件&lt;code class=&quot;language-text&quot;&gt;&amp;lt;RouterProvider/&gt;&lt;/code&gt;，也同樣需放入初始的&lt;em&gt;root-dom&lt;/em&gt;內。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//main.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; createBrowserRouter&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Route&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; RouterProvider &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react-router-dom&quot;&lt;/span&gt;
+
+ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createRoot&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;root&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;StrictMode&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;RouterProvider router&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;routers&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;/* &amp;lt;App /&gt; */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;StrictMode&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;如果想更深入認識 React-Router ，可以看我的筆記：&lt;a href=&quot;&amp;#x27;https://southandy.github.io/andy-walking/React-router/&amp;#x27;&quot;&gt;我所不知道的 React-Router&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;將 firebase 服務引入專案&lt;/h2&gt;
 &lt;p&gt;這次要使用的是 Authentication 這項服務
 &lt;img src=&quot;https://i.imgur.com/5zEWuXV.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h5&gt;(圖片來源：firebase 官網)&lt;/h5&gt;</content:encoded></item><item><title><![CDATA[(筆記) 深拷貝和淺拷貝]]></title><description><![CDATA[####### tags…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</guid><pubDate>Sat, 03 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;Javascript&lt;/code&gt;&lt;/p&gt;
+&lt;h5&gt;(圖片來源：firebase 官網)&lt;/h5&gt;
+&lt;hr&gt;
+&lt;h3&gt;參考資料：&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[(筆記) 深拷貝和淺拷貝]]></title><description><![CDATA[####### tags…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/shadow-copy/</guid><pubDate>Sat, 03 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;Javascript&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;前言&lt;/h3&gt;
 &lt;p&gt;可以先把這個名詞分成兩個部分來理解，分別是:&lt;/p&gt;
 &lt;ol&gt;

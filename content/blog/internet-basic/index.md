@@ -1,8 +1,8 @@
 ---
-title: 用firebase-auth來建立簡易的會員功能吧！（上）
-date: "2022-12-09"
-description: "會員服務是網站常見的功能，透過會員服務能提供給使用者更加客製化的體驗..."
-tags: ["firebase", "react", "note"]
+title: 網際網路基本
+date: "2022-11-26"
+description: "身為前端工程師，不能不認識網路世界！"
+tags: ["internet", "note"]
 ---
 
 ### HTTP 是什麼？

@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Dec 2022 09:29:04 GMT</lastBuildDate><item><title><![CDATA[(筆記)我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Dec 2022 10:02:54 GMT</lastBuildDate><item><title><![CDATA[我之後預計要寫的內容]]></title><description><![CDATA[css flex box-modal min-height / height / max-height 的使用情境？
+簡單筆記：
+: 當這個版面限制特定尺寸，不能因為資料多寡造成排版跑掉時
+:版面只需要最小符合這個尺寸即可，可以因為資料多寡而造成排版改變時 js 解構賦值]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/2022review/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/2022review/</guid><pubDate>Thu, 15 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;css&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;flex&lt;/li&gt;
+&lt;li&gt;box-modal&lt;/li&gt;
+&lt;li&gt;min-height / height / max-height 的使用情境？
+簡單筆記：
+&lt;code class=&quot;language-text&quot;&gt;height&lt;/code&gt;: 當這個版面限制特定尺寸，不能因為資料多寡造成排版跑掉時
+&lt;code class=&quot;language-text&quot;&gt;max / min-height&lt;/code&gt;:版面只需要最小符合這個尺寸即可，可以因為資料多寡而造成排版改變時&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;js&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;解構賦值&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[(筆記)我所不知道的React-Router]]></title><description><![CDATA[####### tags:  關於 React-Router]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/React-router/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/React-router/</guid><pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;關於 React-Router&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[用firebase-auth來建立簡易的會員功能吧！（上）]]></title><description><![CDATA[會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是： 收藏、紀錄網站內容 根據會員喜好提供的客製化推薦 在這次的文章就是要透過 React + firebase 製作一個最簡易的會員功能。 產生一個 firebase 專案 在開始使用 firebase…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/firebase-starter/</guid><pubDate>Fri, 09 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;會員服務是網站常見的必備功能，透過會員制度能提供給使用者更加客製化的體驗，像是：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;收藏、紀錄網站內容&lt;/li&gt;
@@ -132,7 +147,73 @@ ReactDOM&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;h3&gt;參考資料&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Webpack 核心概念]]></title><description><![CDATA[####### tags:  每個  都會有以下的架構： 這些就是 webpack 中的 core-concept ，理解它們才能理解 webpack 究竟幫忙做了哪些事，那我們開始吧： Entry 引入自官方文件 An entry point indicates which…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/webpack/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/webpack/</guid><pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;&lt;/p&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[網際網路基本]]></title><description><![CDATA[HTTP 是什麼？ 是所謂 超文本傳輸協定，全名是 HyperText Transfer Protocol ，內容規範了客戶端要求(request)以及伺服器回應(response)的標準，是使用 TCP 作為資料傳遞方式。 HTTP / HTTPS…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/internet-basic/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/internet-basic/</guid><pubDate>Sat, 26 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;HTTP 是什麼？&lt;/h3&gt;
+&lt;p&gt;是所謂 &lt;strong&gt;超文本傳輸協定&lt;/strong&gt;，全名是 &lt;em&gt;HyperText Transfer Protocol&lt;/em&gt; ，內容規範了客戶端要求(&lt;em&gt;request&lt;/em&gt;)以及伺服器回應(&lt;em&gt;response&lt;/em&gt;)的標準，是使用 &lt;em&gt;TCP&lt;/em&gt; 作為資料傳遞方式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;HTTP / HTTPS 差在哪？&lt;/strong&gt;
+兩個都是&lt;strong&gt;超文本傳輸協定&lt;/strong&gt;，而多出來的那個 &lt;strong&gt;s&lt;/strong&gt; 就是所謂 &lt;strong&gt;security&lt;/strong&gt;
+HTTPS 就是加入了 SSL/TLS 的保密設定，避免傳輸資料過程被竊取。
+&lt;a href=&quot;https://tw.alphacamp.co/blog/http-https-difference&quot;&gt;https://tw.alphacamp.co/blog/http-https-difference&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;h3&gt;HTTP 之 Client-Side / Server-Side&lt;/h3&gt;
+&lt;p&gt;一般來說，資料傳遞上這個行為可以從兩個視角來理解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;客戶端 (client-side)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;伺服器端 (server-side)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;資料傳遞是什麼？怎麼做？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由客戶端發出請求(request) &gt;&gt;&gt; 伺服器端 (server) 收到後，會根據請求回傳回應(response)，來看看實例：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vlZua66.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;某一天，你受不了自己的爛螢幕，懶惰的你很當然的想透過網購來購買，於是你打開 &lt;strong&gt;chrome&lt;/strong&gt;想找一些跟&lt;strong&gt;螢幕&lt;/strong&gt;有關的產品。&lt;/p&gt;
+&lt;p&gt;到這邊我們可以轉換兩個名詞：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;chrome(瀏覽器) =&gt; 客戶端&lt;/li&gt;
+&lt;li&gt;在瀏覽器輸入關鍵字並送出：&lt;strong&gt;螢幕&lt;/strong&gt; =&gt; 發出需求(request)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;請求 (request) 的架構&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;. 發出要求的客戶端&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;HOST&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;: www.google.com
+&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;. URL:https://&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.s.dadasdasd/com
+&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;. 要求&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;方法: GET &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; POST / DELET&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3&gt;GET / POST 的比較&lt;/h3&gt;
+&lt;p&gt;當需要夾帶&lt;strong&gt;敏感資訊&lt;/strong&gt; 通常會使用 &lt;strong&gt;POST&lt;/strong&gt; 的方法，以下是兩者的比較：&lt;/p&gt;
+&lt;p&gt;它的&lt;code class=&quot;language-text&quot;&gt;body:content-type&lt;/code&gt;作為告訴 server 這次資料類型&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Methods/POST&quot;&gt;https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Methods/POST&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;接著&lt;strong&gt;Google 資料庫&lt;/strong&gt;接收到這個&lt;strong&gt;請求 (request)&lt;/strong&gt;，將資料回傳(&lt;strong&gt;response&lt;/strong&gt;)並且呈現在畫面上，轉換起來就是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Google 資料庫 =&gt; 伺服器端&lt;/li&gt;
+&lt;li&gt;資料回傳 =&gt; 回傳回應(response)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;而每個回應內都會包含：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;. 狀態訊息:200&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;成功&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; / &lt;span class=&quot;token number&quot;&gt;401&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;權限問題&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; / &lt;span class=&quot;token number&quot;&gt;404&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;路徑錯誤&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/
+&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;. response body:包含請求的資料內容&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ex:螢幕資訊&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;以上就是最基本的資料傳遞流程。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;客戶端，有時候也能是伺服器媒介&lt;/li&gt;
+&lt;li&gt;請求(request)跟回應(response)一次可發出&gt;=1 個&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;常見的&lt;strong&gt;客戶端媒介&lt;/strong&gt;(又稱為 user-agent ):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;browser&lt;/li&gt;
+&lt;li&gt;mobile&lt;/li&gt;
+&lt;li&gt;electrical-application (家電)&lt;/li&gt;
+&lt;li&gt;web-crawler (網路爬蟲)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;你看到的畫面怎麼來的？&lt;/h3&gt;
+&lt;p&gt;就是由一堆的請求跟回覆所組成&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以下以 Google 搜尋 flag 為例：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/d8g3b5s.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;再進一步細看：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/dLnFQLa.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;... to be continued&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Webpack 核心概念]]></title><description><![CDATA[####### tags:  每個  都會有以下的架構： 這些就是 webpack 中的 core-concept ，理解它們才能理解 webpack 究竟幫忙做了哪些事，那我們開始吧： Entry 引入自官方文件 An entry point indicates which…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/webpack/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/webpack/</guid><pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;####### tags: &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;每個 &lt;code class=&quot;language-text&quot;&gt;webpack.config.js&lt;/code&gt; 都會有以下的架構：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;export &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token literal-property property&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
